@@ -1,0 +1,20 @@
+pipelines:
+  branches:
+    dev:
+      - step:
+          name: 'Deployment to Dev'
+          script:
+            - pipe: atlassian/ssh-run:0.3.0
+              variables:
+                SSH_USER: $SSH_USER
+                SERVER: $SERVER
+                COMMAND: './deployFrontDev.sh'
+    master:
+      - step:
+          name: 'Deployment to Prod'
+          script:
+            - pipe: atlassian/ssh-run:0.3.0
+              variables:
+                SSH_USER: $SSH_USER
+                SERVER: $SERVER_PROD
+                COMMAND: './deployFrontProd.sh'

@@ -1,0 +1,113 @@
+.loyalty-redeems {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 32px;
+
+  &-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: $gray-800;
+    margin-bottom: 24px;
+  }
+
+  &-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    &-input {
+      margin-bottom: 0 !important;
+      margin-right: 8px;
+    }
+
+    &-dropdown {
+      margin-right: 8px;
+    }
+
+    &-reset {
+      display: flex;
+      align-items: center;
+      margin-left: 22px;
+      cursor: pointer;
+
+      &-icon {
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+        margin-top: 2px;
+
+        path {
+          fill: $danger;
+        }
+      }
+
+      &-text {
+        font-size: 14px;
+        color: $danger;
+      }
+    }
+
+    &-search {
+      flex-grow: 1;
+    }
+  }
+
+  &-current_redeem {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 30px;
+    position: relative;
+
+    &-close {
+      font-size: 30px;
+      color: $gray-500;
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      cursor: pointer;
+    }
+
+    &-logos {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+
+      &:first-child {
+        margin-right: 8px;
+      }
+
+      &-logo {
+        width: 170px;
+        height: 170px;
+        border-radius: 6px;
+      }
+    }
+
+    &-table {
+      display: flex;
+      flex-direction: column;
+      margin-top: 18px;
+      padding: 0 4px;
+
+      &-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 12px;
+        font-size: 14px;
+
+        &-title {
+          font-weight: bold;
+        }
+
+        &-value {
+
+        }
+      }
+    }
+
+    &-button {
+      margin-top: 30px;
+    }
+  }
+}

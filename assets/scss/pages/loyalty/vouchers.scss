@@ -1,0 +1,125 @@
+.loyalty-vouchers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px 24px;
+
+  &-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 24px;
+
+    &-title {
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    &-button {
+      display: flex;
+      align-items: center;
+      padding: 8px 24px !important;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+
+      &:focus {
+        box-shadow: 0 0 0 3px rgba(210 219 255) !important;
+      }
+
+      &-icon {
+        margin-right: 8px;
+
+        svg {
+          width: 24px;
+          height: 24px;
+
+          path {
+            fill: white;
+          }
+        }
+
+      }
+
+      &-text {
+
+      }
+    }
+  }
+
+  &-search_container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    &-search {
+      width: 190px;
+
+      &-icon {
+        display: flex;
+        align-items: center;
+        padding: 6px 0 5px 12px !important;
+        background-color: white;
+        border-left: 1px solid $gray-300;
+        border-top: 1px solid $gray-300;
+        border-bottom: 1px solid $gray-300;
+        border-radius: 4px 0 0 4px;
+
+        svg {
+          path {
+            fill: $gray-500;
+          }
+        }
+      }
+
+      &-input {
+        border: none;
+        border-top: 1px solid $gray-300;
+        border-right: 1px solid $gray-300;
+        border-bottom: 1px solid $gray-300;
+        border-radius: 0 4px 4px 0;
+
+        &:focus {
+          box-shadow: none;
+          border-top: 1px solid $gray-300;
+          border-right: 1px solid $gray-300;
+          border-bottom: 1px solid $gray-300;
+        }
+      }
+    }
+  }
+
+  &-create {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px 36px 24px;
+    width: 400px;
+    position: relative;
+
+    &-close {
+      font-size: 30px;
+      color: $gray-500;
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      cursor: pointer;
+    }
+
+    &-status {
+      position: absolute;
+      top: 19px;
+      left: 19px;
+    }
+
+    &-logo {
+      width: 155px;
+      height: 155px;
+      margin: 20px auto 0;
+    }
+
+    &-fields {
+      margin-top: 24px;
+    }
+  }
+}

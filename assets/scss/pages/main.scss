@@ -1,0 +1,30 @@
+.main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+
+  &-navigation {
+    min-width: 256px !important;
+    border-right: 1px solid #e9edf2;
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+
+    &-header {
+
+    }
+
+    &-page {
+      display: flex;
+      background-color: $background;
+      height: 100%;
+      width: 100%;
+      overflow: auto;
+    }
+  }
+}

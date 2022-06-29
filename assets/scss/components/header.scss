@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  flex-flow: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 12px 32px;
+  width: 100%;
+
+  &-message {
+    margin-right: 24px;
+    cursor: pointer;
+  }
+
+  &-notify {
+    margin-right: 24px;
+    cursor: pointer;
+  }
+
+  &-menu {
+    padding: 0;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 100px;
+      background-color: $primary;
+      cursor: pointer;
+    }
+
+    &-items {
+      display: flex;
+      flex-direction: column;
+
+      &-item {
+
+        &-title {
+
+        }
+      }
+    }
+  }
+}
