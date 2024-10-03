@@ -88,6 +88,7 @@ export const mutations = {
       state.errorAuthData.password = errorAuthData.password
     }
   },
+  // test
   CLEAR_ERROR_AUTH_DATA (state) {
     state.errorAuthData = {
       email: null,
